@@ -28,6 +28,38 @@ public class Pic2D implements ActionListener {
 
     }
 
+//    public void paintCar1(Graphics g, int x , int y)
+//    {
+//        g.setColor(Color.darkGray);
+//        g.fillRect( x, y, 150, 80);
+//        g.setColor(Color.black);
+//        g.fillOval(x+10, y+58, radius * 2 -80, radius * 2 -80);
+//        g.fillOval(x+100, y+58, radius * 2 -80, radius * 2 -80);
+//        g.setColor(Color.cyan.darker());
+//        g.fillRect( x, y, 110, 40);
+//    }
+//    public void paintCar2(Graphics g, int x, int y)
+//    {
+//        g.setColor(Color.red.darker());
+//        g.fillRect( 750, 492, 150, 80);
+//        g.setColor(Color.black);
+//        g.fillOval(760, 550, radius * 2 -80, radius * 2 -80);
+//        g.fillOval(850, 550, radius * 2 -80, radius * 2 -80);
+//        g.setColor(Color.cyan.darker());
+//        g.fillRect( 750, 492, 110, 40);
+//    }
+//    public void paintCar3(Graphics g)
+//    {
+//        g.setColor(Color.yellow.darker());
+//        g.fillRect( 500, 620, 150, 80);
+//        g.setColor(Color.black);
+//        g.fillOval(510, 678, radius * 2 -80, radius * 2 -80);
+//        g.fillOval(600, 678, radius * 2 -80, radius * 2 -80);
+//        g.setColor(Color.cyan.darker());
+//        g.fillRect( 540, 620, 110, 40);
+//    }
+
+
     @Override
     public void actionPerformed(ActionEvent e)
     {
@@ -66,6 +98,9 @@ public class Pic2D implements ActionListener {
         g.setColor(Color.black);
         g.fillOval(160, 550, radius * 2 -80, radius * 2 -80);
         g.fillOval(250, 550, radius * 2 -80, radius * 2 -80);
+        g.setColor(Color.white);
+        g.fillOval(168, 558, radius * 2 -97, radius * 2 -97);
+        g.fillOval(258, 558, radius * 2 -97, radius * 2 -97);
         g.setColor(Color.cyan.darker());
         g.fillRect( 150, 492, 110, 40);
         //samochód2
@@ -74,6 +109,9 @@ public class Pic2D implements ActionListener {
         g.setColor(Color.black);
         g.fillOval(760, 550, radius * 2 -80, radius * 2 -80);
         g.fillOval(850, 550, radius * 2 -80, radius * 2 -80);
+        g.setColor(Color.white);
+        g.fillOval(768, 558, radius * 2 -97, radius * 2 -97);
+        g.fillOval(858, 558, radius * 2 -97, radius * 2 -97);
         g.setColor(Color.cyan.darker());
         g.fillRect( 750, 492, 110, 40);
         //samochód3
@@ -82,6 +120,9 @@ public class Pic2D implements ActionListener {
         g.setColor(Color.black);
         g.fillOval(510, 678, radius * 2 -80, radius * 2 -80);
         g.fillOval(600, 678, radius * 2 -80, radius * 2 -80);
+        g.setColor(Color.white);
+        g.fillOval(518, 686, radius * 2 -97, radius * 2 -97);
+        g.fillOval(608, 686, radius * 2 -97, radius * 2 -97);
         g.setColor(Color.cyan.darker());
         g.fillRect( 540, 620, 110, 40);
         //drzewa
@@ -90,6 +131,7 @@ public class Pic2D implements ActionListener {
         g.fillRect( 750, HEIGHT - 480, 30, 100);
         g.fillRect( 200, HEIGHT - 500, 32, 100);
         g.fillRect( 550, HEIGHT - 450, 28, 100);
+
         g.setColor(Color.green);
         g.fillOval(980, HEIGHT - 550, radius * 2 -40, radius * 2 -40);
         g.fillOval(980, HEIGHT - 540, radius * 2 -40, radius * 2 -40);
@@ -107,10 +149,33 @@ public class Pic2D implements ActionListener {
         g.fillPolygon(p3);
         g.fillPolygon(p4);
         g.fillPolygon(p5);
-        //ptak
+
+        //ptaki
         g.setColor(Color.black);
         g.drawArc(800, 200, 80, 50, 10, 60);
         g.drawArc(878, 200, 85, 50, 120, 60);
+
+        g.drawArc(870, 200, 50, 35, 10, 60);
+        g.drawArc(920, 200, 55, 35, 120, 60);
+
+        //szprychy
+        g.drawLine(768, 570,790,570);
+        g.drawLine(768, 560,790,580);
+        g.drawLine(768, 580,790,560);
+        g.drawLine(779, 580,779,560);
+        g.drawLine(858, 570,880,570);
+        g.drawLine(858, 560,880,580);
+        g.drawLine(858, 580,880,560);
+        g.drawLine(869, 580,869,560);
+
+        g.drawLine(168, 570,190,570);
+        g.drawLine(168, 560,190,580);
+        g.drawLine(168, 580,190,560);
+        g.drawLine(179, 580,179,560);
+        g.drawLine(258, 570,280,570);
+        g.drawLine(258, 560,280,580);
+        g.drawLine(258, 580,280,560);
+        g.drawLine(269, 580,269,560);
 
     }
 
